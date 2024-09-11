@@ -56,7 +56,8 @@ body {
 body {
     /* Fundo da página */
     background-color: rgb(240, 240, 240);
-    background-image: url('/images/snakebg2.png');
+    background-image: url("/images/retrato-da-bela-modelo-sorridente-com-penteado-afro-cachos_158538-843.jpg");
+    background-image: url;
     background-attachment: fixed;
 }
 
@@ -181,6 +182,7 @@ body {
     position: absolute;
     top: 9rem;
     z-index: 1000;
+    width: 220px;
 }
 
 #wrap>nav a {
@@ -188,23 +190,22 @@ body {
     text-decoration: none;
     display: flex;
     /* align-items: center; */
-    padding: .7rem;
+    padding: 1rem;
     transition: .2s;
+    border-bottom: 1px dotted grey;
+}
+
+#wrap>nav a:last-child {
+    border-bottom: none;
 }
 
 #wrap>nav a:hover {
     color: rgb(255, 165, 0);
 }
 
-/* Link de Início (home) */
-#wrap>nav a:first-child {
-    /* margin-right: auto; */
-}
-
 #wrap>nav i {
     font-size: 1.2rem;
     margin-right: .5rem;
-    margin-bottom: .5rem;
 }
 
 #wrap>nav span {
@@ -300,7 +301,7 @@ body {
  ***** Usando Media Queries             *****
  ********************************************/
 
-@media screen and (min-width: 575px) {
+@media screen and (min-width: 640px) {
 
     /* altera o cabeçalho */
     #wrap>header {
@@ -309,14 +310,20 @@ body {
         justify-content: space-between;
     }
 
-    /* Altera o menu */
-    #wrap>nav a {
+    #wrap>nav {
         flex-direction: row;
+        justify-content: flex-end;
+        position: initial;
+        width: auto;
     }
 
-    #wrap>nav a i {
-        font-size: 1.2rem;
-        margin: 0 .35rem 0 0;
+
+    #wrap>nav a:first-child {
+        margin-right: auto;
+    }
+
+    #toggleMenu {
+        display: none;
     }
 }
 
@@ -346,11 +353,11 @@ body {
 }
 
 
-#fumaca {
+#menuSmoke {
     position: fixed;
     width: 100%;
     height: 100%;
-    background: rgba(255,0,0,.5);
+    background: rgba(0, 0, 0, .5);
     top: 9rem;
     z-index: 100;
 }
