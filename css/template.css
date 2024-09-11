@@ -56,7 +56,7 @@ body {
 body {
     /* Fundo da página */
     background-color: rgb(240, 240, 240);
-    background-image: url("/images/retrato-da-bela-modelo-sorridente-com-penteado-afro-cachos_158538-843.jpg");
+    background-image: url("images/retrato-da-bela-modelo-sorridente-com-penteado-afro-cachos_158538-843.jpg");
     background-image: url;
     background-attachment: fixed;
 }
