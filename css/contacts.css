@@ -15,10 +15,10 @@ main button {
 main input,
 main textarea {
    width: 100%;
-   border: 1px solid rgb(29, 27, 27);
+   border: 1px solid rgb(105, 98, 98);
    border-bottom: 2px solid rgb(39, 36, 36);
    border-right: 2px solid rgb(44, 42, 42); 
-   background-color: rgb(255, 240, 240);
+   background-color: rgb(252, 247, 247);
 }
 
 main textarea {
@@ -30,7 +30,7 @@ main button {
     background-image: url;
     border: none;
     background-color: gray;
-    color: white;
+    color: rgb(211, 194, 194);
     padding-left: 1rem;
     padding-right: 1rem;
     pointer-events: none;
@@ -41,7 +41,7 @@ main textarea:valid {
     border: 1px solid green;
     border-bottom: 2px solid green;
     border-right: 2px solid green; 
-    background-color: rgb(232, 240, 254);
+    background-color: rgb(237, 243, 252);
 }
 
 main form:valid button {
@@ -52,7 +52,7 @@ main form:valid button {
 
 
 main form small {
-        color: grey;
+        color: rgba(22, 21, 21, 0.993);
 }  
 main aside div{
     display: flex;
